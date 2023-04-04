@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Buy Now Form</title>
+	<style>
+		body {
+			background-color: #F5F5F5;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+		}
+		
+		h1 {
+			color: #333;
+			text-align: center;
+		}
+		
+		form {
+			background-color: #FFFFFF;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px #999;
+			margin: 0 auto;
+			max-width: 500px;
+			padding: 20px;
+		}
+		
+		label {
+			display: block;
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		
+		input[type="text"], input[type="email"], input[type="tel"], textarea {
+			border: 2px solid #CCC;
+			border-radius: 5px;
+			font-size: 16px;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+			border-color: #6699FF;
+			box-shadow: 0px 0px 10px #6699FF;
+		}
+		
+		select {
+			border: 2px solid #CCC;
+			border-radius: 5px;
+			font-size: 16px;
+			padding: 10px;
+			width: 100%;
+		}
+		
+		button[type="submit"] {
+			background-color: #6699FF;
+			border: none;
+			border-radius: 5px;
+			color: #FFF;
+			cursor: pointer;
+			font-size: 16px;
+			padding: 10px;
+			margin-top: 20px;
+			width: 100%;
+		}
+		
+		button[type="submit"]:hover {
+			background-color: #3366CC;
+		}
+	</style>
+</head>
+<body>
+	<h1>Buy Now</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="address">Address:</label>
+		<textarea id="address" name="address" required></textarea>
+
+		<label for="phone">Phone:</label>
+		<input type="tel" id="phone" name="phone" required>
+
+		<label for="payment-method">Payment Method:</label>
+		<select id="payment-method" name="payment-method">
+			<option value="credit-card">Credit Card</option>
+			<option value="paypal">PayPal</option>
+			<option value="bank-transfer">Bank Transfer</option>
+		</select>
+
+		<button type="submit">Buy Now</button>
+	</form>
+</body>
+</html>
